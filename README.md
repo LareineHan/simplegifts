@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# ⭐️ SimpleGifts ⭐️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**SimpleGifts** is a lightweight application I developed out of a personal need. Often, I would encounter recurring issues or challenges that had surprisingly simple solutions. For instance, commands like `git commit -m 'first commit'` are seemingly trivial, but can be essential in the moment. I wanted a dedicated, easily accessible, and private space to store such tidbits of information. Thus, SimpleGifts was born. It's designed for jotting down ideas, notes, errors, or memos with a title and description. Think of it as your digital sticky note pad, but tailored for those "a-ha!" moments and solutions, making organizing and recalling information a breeze.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- **Add Notes**: Quickly add notes with a title and a detailed description.
+- **Delete Notes**: Get rid of notes you no longer need with a simple click on the trash icon.
+- **Heart Your Notes**: Found a note particularly useful? Give it a heart! 
+- **Sorting**: Rearrange your notes based on different criteria to find what you need faster.
+- **Code Insertion**: For those technical notes or to store code snippets, you can easily insert code using markdown-style backticks \``` \```.
 
-### `npm start`
+# Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Add a New Note**:
+   - Click on the '+' icon.
+   - Enter your note's title and description.
+   - If you want to include code in your description, wrap it between \``` \``` for proper formatting.
+   - Click on 'Submit' to add the note.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Delete a Note**:
+   - Find the note you wish to delete.
+   - Click on the trash icon associated with that note.
 
-### `npm test`
+3. **Heart a Note**:
+   - Simply click on the heart icon next to the note you like. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Sort Your Notes**:
+   - Use the sorting controls to rearrange your notes based on your preference.
 
-### `npm run build`
+# Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository.
+   ```bash
+   git clone [repository_url]
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory.
+   ```bash
+   cd SimpleGifts
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the necessary dependencies.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the app.
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Contributing
+This is an ongoing solo project, but contributions are warmly welcomed! Whether it's feature suggestions, bug reporting, or direct contributions to the code, your help is appreciated. Feel free to submit issues or pull requests if you think there's something that can be added or improved.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Thank you!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you appreciated this, feel free to follow me!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Lareine Han Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/theNewLareine)
+[![Lareine Han Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lareinehan/)
