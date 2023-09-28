@@ -1,38 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&family=Noto+Color+Emoji&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif, 'Noto Color Emoji';
+}
 .App {
-  text-align: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 2em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fa-keyboard{
+  margin-left: 0.5em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contents-box {
   display: flex;
   flex-direction: column;
+  max-width: 650px;
+  margin: auto;
+}
+div {
+  box-sizing : border-box
+}
+hr {
+  background-color: #d4d3d3;
+  height: 1px;
+  border: none;
+  margin-top: 30px;
+}
+
+.controller {
+  display : flex;
+  flex-direction: row;
+  justify-content : flex-end;
+  align-items : center;
+  margin-top : 1.6em;
+  margin-bottom: 1em;
+}
+.fa-arrow-down-a-z, .fa-arrows-rotate {
+  cursor: pointer;
+  font-size: 1.3em !important;
+  color: rgb(0, 107, 161);
+  margin-left: auto;
+}
+
+.contents{
+  display: flex;
+}
+
+.title{
+  display: flex;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  color: #0b2461;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.fa-heart{
+  display: flex;
+  cursor: pointer;
+  margin-right: 0.5em;
+  margin-left: 1em;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 128);
+}
+
+.like-count {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  font-weight: regular;
+  font-size: 12px;
+  color:#614f71;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.fa-trash-can {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1em !important;
+  margin-left: auto;
+}
+
+/* floating action button */
+.fa-circle-plus{
+  margin-right: 0.5em;
+  cursor: pointer;
+  font-size: 3em !important;
+}
+.fab {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px; /* vertically center the icon */
+  font-size: 24px;
+  z-index: 1000;
+  cursor: pointer;
+  /* Larger touch area */
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+
+.add-close-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1.4em;
+}
+
+.btn-add{
+  background: linear-gradient(to bottom right, #0b2461, #0c6b9a);
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 3em;
+    outline: transparent;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.btn-dismiss   {
+  display: flex;
+  justify-content: flex-end;
+  top: 0.2em;  /* Updated this */
+  right: 0em;  /* Updated this */
+  background-color: transparent; /* For debugging, will be visible if the button is in the DOM */
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #4f4e4e;  /* Or any other color you like */
+}
+
+.code {
+ margin-top: 1em;
+}
+
+.btn-close {
+  background: linear-gradient(to bottom right, #390b61, #0c6b9a);
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+  outline: transparent;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.copy-btn {
+  cursor: pointer;
+}
+
+
+.black-nav {
+  background : black;
+  color : white;
+  padding-left : 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: bolder;
+  font-size : 20px;
+  font-family: 'Mooli', sans-serif;
+}
+.list {
+  text-align : left;
+  padding-left : 2em;
+  padding-right: 2em;
+}
+
+/* modal for creating a new list */
+.modal-create {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.255); /* semi-transparent background */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 999999999; /* make sure it's on top */
+}
+.modal-content {
+  background-color: #ffffffea;
+  border-radius: 30px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-name {
+  font-family: Mooli, cursive;
+}
+.title-input {
+  width : 80%;
+  height : 7vh;
+  border : 1px solid #a3a3a4;
+  border-radius : 15px;
+  padding : 10px;
+  margin-top : 10px;
+  margin-right: 0.7em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .title-input:focus {
+  outline : none;
+} */
+.detail-input {
+  width : 80%;
+  height : 15vh;
+  border : 1px solid #a3a3a4;
+  border-radius : 15px;
+  padding : 10px;
+  margin-top : 10px;
+  margin-right: 0.7em;
+  margin-bottom: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.modal{
+  margin: 1em;
+  padding-top: 0px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, #faf9f9, #b1e5ff);
+}
+.modal-title{
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1em;
+  color:#0b2461;
+}
+.modal-details {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 50px;
+}
+.modal-details pre {
+  border: none; /* Subtle border */
+  border-radius: 15px; /* Slight rounding at the corners */
+  background-color: #6d92b231; /* A light gray */
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom: 1.3em;
+  margin-bottom: 1em;
+  overflow-x: auto;  /* Scrollable when content overflows */
+}
+.modal-details code {
+  font-family: 'Fira Code', 'Source Code Pro', monospace; /* Modern code font with a fallback */
+  font-weight: 600;
+  color: #463a4a; /* Darker text for better contrast */
+}
+
+
+
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+  .contents-box {
+    max-width: 100%;  /* take full width on mobile */
+    padding: 0 15px;  /* some padding to ensure content doesn't touch the edges */
   }
 }
