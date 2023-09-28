@@ -16,7 +16,7 @@ const ListItem = ({
 	items,
 	setItems,
 }) => {
-	console.log('Rendering itemId:', itemId);
+	// console.log('Rendering itemId:', itemId);
 
 	// Log the updated status of num and isLiked by clicking the heart icon.
 	useEffect(() => {
