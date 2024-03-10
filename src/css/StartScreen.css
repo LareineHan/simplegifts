@@ -1,0 +1,64 @@
+/* StartScreen.css */
+
+.block1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+.block1 h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.block1 p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.block1 ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.block1 li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+.block1 strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.block1 .codeSample {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e4e3e3;
+    color: rgb(0, 107, 161);
+    font-weight: 600;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.block1 .codeSample:before,
+.block1 .codeSample:after {
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+
+@media (max-width: 768px) {
+    .block1 {
+        padding: 15px;
+    }
+}

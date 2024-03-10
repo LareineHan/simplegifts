@@ -42,12 +42,42 @@ hr {
   margin-top : 1.6em;
   margin-bottom: 1em;
 }
-.fa-arrow-down-a-z, .fa-arrows-rotate {
+.fa-arrow-down-a-z, .fa-undo, .fa-trash{
   cursor: pointer;
   font-size: 1.3em !important;
   color: rgb(0, 107, 161);
   margin-left: auto;
 }
+.bnt-clean-slate {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  background-color: #f9ed69;
+  color: rgb(0, 107, 161);;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto; /* Set width to auto to fit content */
+  max-width: 500px; /* Set max-width to limit the width of the tooltip */
+  transform: translate(5%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bnt-clean-slate:hover .tooltip {
+  opacity: 1;
+}
+
+
+
 
 .contents{
   display: flex;
